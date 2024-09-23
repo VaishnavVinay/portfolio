@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Archivo Black", sans-serif; /*copied from google fonts*/
+    box-sizing: border-box; /*to make the diplay in a box like model*/
+}
+#container {
+    width: 100%;
+    height: 100vh;
+    position: relative; /*every elements will be changed wrt to parent*/
+}
+nav {
+    display: flex; /*to make elements in flex model */
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px; /*make space from left*/
+}
+.logo {
+    width: 150px;
+}
+.list-items {
+    list-style: none; /*removes the bullets in unordered list*/
+    display: inline;  /*make elements from block to inline*/
+    margin: 0px 20px; /* 0px at top&bottom and 20px at left&right*/
+}
+.list {
+    color: black;
+    font-weight: 600;
+    text-decoration: none; /*to remove the underline from the text*/
+
+}
+.list:hover{
+    color: red; /*to show the color on mouse over element*/
+    text-decoration: underline; /*to bring back underline whrn mouse over it*/
+}
+.home-content{
+    margin: 13% 0px 0px 10%; /*top:13px right&bottom 0px and left:8px*/
+}
+#username{
+    font-size: 50px;
+    margin-bottom: 20px; /* to gap between contents */
+    font-family: "Pacifico", system-ui;
+}
+#lname {
+    font-family: "Pacifico", system-ui;
+    color: orange; /*to change lastname color*/
+
+}
+#user-details {
+    line-height: 1.2; /*Set the line height for different <div> elements*/
+    font-family: "Orbitron", system-ui;
+}
+#download {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px; /*to make a box like model*/
+    display: inline-block; /*to make inline elements to block elements like*/ 
+    border-radius: 8px; /*curved border*/
+    margin-top: 20px; /* gap from top*/
+
+}
+.home-img {
+    width: 45%;   /*width for images*/
+    height: 75%;
+    position: absolute; /*to overlap images*/
+    bottom: 0px; /* to be in line with content */
+    right: 32px;
+}
+.group1{
+    position: absolute; /*to overlap*/
+    height: 100%;
+    bottom: 0%; /*to move the shape img in opposite direction*/
+    left: 50%; /*to move the the img in opposite direction*/
+    transform: translateX(-50%); /* to create transition of X elemnt along x-axis
+                                    translateX(x)*/  
+
+
+}
+.home-img:hover #shape{ /*to hover the image along with the image*/
+
+bottom: 70px;
+}
+.home-img:hover #girl {
+    left: 35%;
+
+}
+#about {
+    margin: 18% 8px 0px 8% ; /*adjust according to our need */
+}
+.sectionhead {
+    text-align: center; /* to bring content to center */
+}
+#mainhead {
+    font-size: 35px; /* size for About me*/
+}
+#subhead {
+    font-size: 25px; /*size and color for the introduction */
+    color: green;
+
+}
+.aboutbody {
+    margin-top : 20px; /*margintop for creating sapce btwn the about and image*/
+    display: grid; /*to make image and contents in inline blocks*/
+    grid-template-columns:auto auto ;
+    align-item:center;
+}
+.img1 {
+    width: 95%;
+
+}
